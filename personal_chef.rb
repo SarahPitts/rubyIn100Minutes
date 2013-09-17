@@ -11,6 +11,13 @@ class PersonalChef
     puts "Making your Orange Juice!"
     return self
   end
+  def good_morning
+    require 'date'
+    today = Date.today.strftime("%A")
+    day_of_year = Date.today.yday
+    puts "Happy #{today}! It is day #{day_of_year} of the year."
+    return self
+  end
 end
 
 class Butler
