@@ -14,6 +14,25 @@ class PersonalChef
     puts "Making your Orange Juice!"
     return self
   end
+  def water_status(minutes)
+    if minutes < 7
+      puts "The water is not boiling yet."
+    elsif minutes == 7
+      puts "It's just barely boiling"
+    elsif minutes == 8
+      puts "It's boiling!"
+    else
+      puts "Hot! Hot! Hot!"
+    end
+    return self
+  end
+  def countdown(counter)
+    while counter > 0
+      puts "The counter is #{counter}"
+      counter = counter - 1
+    end
+    return self
+  end
   def gameplan(meals)
     meals.each do |meal|
       puts "We'll have #{meal}..."
